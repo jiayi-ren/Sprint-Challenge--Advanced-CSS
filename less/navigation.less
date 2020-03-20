@@ -1,9 +1,8 @@
 // Navigation code here
 .nav-bar{
-    width: 100vw;
     .flex-center();
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     padding: 15px 0;
     background-color: @nav-bg;
     border: 1px solid @nav-border;
@@ -16,9 +15,17 @@
     nav{
         .flex-center();
         justify-content: space-around;
-        align-items: center;
-        padding: 15px 28% 0;
-        width: 100%;
+        padding: 15px 20% 0;
+        width: 90vw;
+
+        @media @tablet {
+            padding: 15px 10% 0;
+        }
+
+        @media @phone{
+            width: 100%;
+            padding: 15px 5% 0;
+        }
 
         a{
             text-decoration: none;
@@ -27,6 +34,8 @@
             &:hover{
                 color: skyblue;
             }
+        
         }
+        
     }
 }
