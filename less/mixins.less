@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.animation(@position, @font-color){
+    transform:translate(@position, 0);
+    color: @font-color;
+}
+
 .btn-styles(@background-color, @font-color, @font-size, @padding, @border-radius){
     background-color: @background-color;
     color: @font-color;

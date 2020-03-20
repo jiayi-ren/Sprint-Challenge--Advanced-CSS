@@ -3,36 +3,49 @@
     .flex-center();
     flex-direction: column;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 0;
     background-color: @nav-bg;
     border: 1px solid @nav-border;
+
+    @keyframes anime {
+        0%  {.animation(50%, red);}
+        20% {.animation(-50%, yellow);}
+        40% {.animation(30%, red);}
+        60% {.animation(-30%, yellow);}
+        80% {.animation(10%, red);}
+        90% {.animation(-10%, yellow);}
+        100%{.animation(0, red);}
+    }
 
     div{
         h1{
             font-size: 4rem;
+            animation: anime 3s;
         }
     }
     nav{
         .flex-center();
         justify-content: space-around;
-        padding: 15px 20% 0;
+        padding: 0 20% 0;
         width: 90vw;
 
         @media @tablet {
-            padding: 15px 10% 0;
+            padding: 0 10% 0;
         }
 
         @media @phone{
             width: 100%;
-            padding: 15px 5% 0;
+            padding: 0 5% 0;
         }
 
         a{
             text-decoration: none;
             color: @nav-font;
             font-size: 1.6rem;
+            padding: 15px 10px;
             &:hover{
-                color: skyblue;
+                color: @sea-shell;
+                background-color: @main-font-color;
             }
         
         }
