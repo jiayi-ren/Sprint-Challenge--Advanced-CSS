@@ -370,16 +370,16 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
-@media (max-width:500px) {
-  .home .walk .walk-img {
-    margin: 0;
-    width: 80%;
-  }
-}
 @media (max-width:700px) {
   .home .walk .walk-img {
     width: 60%;
     margin: 0;
+  }
+}
+@media (max-width:500px) {
+  .home .walk .walk-img {
+    margin: 0;
+    width: 80%;
   }
 }
 .home .walk .walk-img img {
