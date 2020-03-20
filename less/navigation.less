@@ -1,1 +1,32 @@
 // Navigation code here
+.nav-bar{
+    width: 100vw;
+    .flex-center();
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    background-color: @nav-bg;
+    border: 1px solid @nav-border;
+
+    div{
+        h1{
+            font-size: 4rem;
+        }
+    }
+    nav{
+        .flex-center();
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 28% 0;
+        width: 100%;
+
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+            &:hover{
+                color: skyblue;
+            }
+        }
+    }
+}
