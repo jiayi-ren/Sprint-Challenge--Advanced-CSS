@@ -1,1 +1,28 @@
 // Mixins Here
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.padding(){
+    padding: 15px;
+}
+
+.reverse-center(){
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.animation(@position, @font-color){
+    transform:translate(@position, 0);
+    color: @font-color;
+}
+
+.btn-styles(@background-color, @font-color, @font-size, @padding, @border-radius){
+    background-color: @background-color;
+    color: @font-color;
+    font-size: @font-size;
+    padding: @padding;
+    border-radius: @border-radius;
+    text-align: center;
+}
